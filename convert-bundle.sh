@@ -7,7 +7,6 @@ awk '!/^[[:space:]]*$/' lab3_data.tsv > cleaned.tsv
 
 tr '\t' ',' < cleaned.tsv > lab3_data.csv
 
-#Can be 97 or 96 lines depending on whether we count the header, I think 96 is more accurate based on the question.
 
 LINES=$(wc -l < lab3_data.csv | tr -d ' ')
 COUNT=$((LINES-2))
